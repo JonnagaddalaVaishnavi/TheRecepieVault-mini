@@ -1,0 +1,68 @@
+<header>
+    <style>
+        header {
+            background-color: #4A4947;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-style: italic;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #6C6A68;
+            padding: 10px 0;
+            border-radius: 4px;
+        }
+        nav ul li ul li {
+            margin: 0;
+        }
+        nav ul li ul li a {
+            padding: 10px 20px;
+            display: block;
+            color: white;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+    </style>
+    <div class="logo">The Recipe Vault</div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Recipes ▼</a>
+                <ul>
+                    <li><a href="#">Vegetarian</a></li>
+                    <li><a href="#">Non-Vegetarian</a></li>
+                    <li><a href="#">Desserts</a></li>
+                    <li><a href="#">Quick Bites</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>

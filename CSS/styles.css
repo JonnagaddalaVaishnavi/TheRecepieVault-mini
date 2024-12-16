@@ -1,0 +1,282 @@
+/* General Body Styles */
+body {
+/*     background-image: url('Images/food-background.jpeg');
+    background-color: #FEF3E2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    body { */
+        background: url('Images/food-background.jpeg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        color: #333;
+}
+
+h3 {
+    text-align: center; 
+    color: #d35400;
+}
+p {
+    text-align: center;
+}
+a, .p1 {
+    text-align: center;
+    text-decoration:double;
+    font-size:x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF9A00;
+    color: white;
+    padding: 1rem 2rem;
+}
+footer {
+    
+    background-color: #FF9A00; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    display: inline-block;
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: #FF9A00;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    min-width: 200px;
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF9A00;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styles for Image Positioning */
+.Image-positioning {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 1rem; /* Space between images */
+    justify-items: center; /* Center-align images horizontally */
+    margin: 2rem auto;
+    max-width: 900px; /* Optional: Limit overall container width */
+}
+
+/* Styling the images */
+.Image-positioning img {
+    width: 100%; /* Full width within grid cell */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 250px; /* Set a maximum width */
+    max-height: 200px; /* Set a maximum height to ensure uniform size */
+    object-fit: cover; /* Crop image to fit within set dimensions */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for interactivity */
+.Image-positioning img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Recipe Styles */
+.recipe {
+    display: inline-block; /* Keep recipes inline */
+    width: 200px; /* Set a fixed width */
+    margin: 20px; /* Add space between recipes */
+    padding: 10px; /* Add padding inside each recipe */
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.recipe img {
+    width: 100%; /* Full width within the recipe box */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+.recipe p {
+    font-size: 1rem; /* Standard font size */
+    color: #333; /* Dark text color */
+    margin: 10px 0; /* Space around text */
+}
+
+.recipe a {
+    display: inline-block; /* Keep the link inline */
+    padding: 8px 12px; /* Padding around the link */
+    background-color: #FF9A00; /* Button color matching your theme */
+    color: #fff; /* White text */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    font-size: medium;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.recipe a:hover {
+    background-color: #e07020; /* Darker shade on hover */
+}
+
+/* General Styles for Cuisine Section */
+.cuisines-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 10px;
+    max-width: 95%;
+    box-sizing: border-box;
+}
+
+.cuisine {
+    display: flex;
+    align-items: center;
+    background-color: #FFF8F0;
+    border: 1px solid #E0D5C3;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuisine:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cuisine.reverse {
+    flex-direction: row-reverse;
+}
+
+.cuisine-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.cuisine:hover .cuisine-image {
+    transform: rotate(-3deg);
+}
+
+.cuisine-description {
+    flex: 1;
+}
+
+.cuisine-description h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.cuisine:hover .cuisine-description h3 {
+    color: #FF5722;
+}
+
+.cuisine-description p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* About Section Styling */
+#about {
+    padding: 40px;
+    background-color: #FFF8F0;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h1 {
+    font-size: 28px;
+    color: #FF934F;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+#about ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #333;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+}
